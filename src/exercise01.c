@@ -1,14 +1,14 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(int argc, char *argv[])
 {
-    float x;
-    
+    double x;
 
-    printf("Enter side lenght please: ");
-    scanf("%f", &x);
-    float area = 2 * x;
-    float volume = 3 * x;
-    printf("The area is:%.2f \nThe volume is:%.2f\n", area, volume);
+    printf("Enter side lenght: ");
+    scanf("%lf", &x);
+    double area = pow(x, 2);
+    double volume = pow(x, 3);
+    printf("The area is: %.2f \nThe volume is: %.2f\n", area, volume);
     return 0;
 }
