@@ -12,10 +12,10 @@ int main(){
     int num;
     printf("Ingrese un numero:");
     scanf("%i", &num);
-    if(num == 0){
+    /*if(num == 0){
         printf("You can not divide by 0 \n");
-    }
-    else if(is_even(num) == 1){
+    } */
+    if(is_even(num) == 1){
         printf("El numero es par\n");
     }
     else if(is_even(num) == 0){
